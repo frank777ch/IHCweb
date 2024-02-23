@@ -1,0 +1,119 @@
+@keyframes desplazamiento {
+    0% { left: 100%; opacity: 1; }
+    50% { left: 0%; opacity: 1; }
+    100% { left: -100%; opacity: 1; }
+}
+
+body {
+    background: linear-gradient(to right, #1585BD, #1E3883, #E3A228,
+    #1585BD, #1E3883, #E3A228,
+    #1585BD, #1E3883, #E3A228,
+    #1585BD, #1E3883, #E3A228,
+    #1585BD, #1E3883, #E3A228,
+    #1585BD, #1E3883, #E3A228,
+    #1585BD, #1E3883, #E3A228,
+    #1585BD, #1E3883, #E3A228,
+    #1585BD, #1E3883, #E3A228);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+#contenido {
+    background-color: #CDF2FC;
+    width: 80%;
+    padding: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+#titulo {
+    position: relative;
+    font-size: 50px;
+    animation: desplazamiento 10s linear infinite;
+  }
+
+#titulo:hover{
+    color: red;
+}
+
+.parrafo{
+    text-align: justify;
+}
+
+.contenedor {   
+    width: 100%;
+    overflow: hidden;
+}
+.contenedor2 {
+    background-color: brown;
+    height: 10vh;
+    width: 100%;
+    padding: 2px;
+    margin: 2px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.contenedor3 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.columna1 {
+    flex: 70%;
+    background-color: white; 
+    padding: 30px;
+    margin: 1px;
+}
+
+.columna2 {
+    flex: 30%; 
+    background-color: white; 
+    padding: 15px;
+    margin: 10px;
+}
+.profe {
+    text-align: center;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: white;
+}
+#frase{
+    text-align: center;
+}
+
+
+.c1{
+    background-color: #0126F4;
+    font-weight: bold;
+    color: white;
+}
+.c2{
+    background-color: #7097FF;
+    text-align: center; 
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.transimg {
+    transition: transform 0.3s ease;
+}
+
+.transimg:hover {
+    transform: scale(2);
+}
